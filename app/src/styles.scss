@@ -54,3 +54,29 @@ body {
     flex-wrap: wrap;
     height: 100vh;
 }
+
+.btn {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: white;
+    color: $color-primary;
+    box-shadow: 0 3px 6px $color-primary;
+    font-weight: 700;
+    border-radius: 7px;
+    font-size: 2em;
+    margin: auto;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    padding: 1rem 0;
+    z-index: 1;
+    transition: all .3s;
+    margin: 4rem auto 2rem;
+    display: block;
+
+    &:hover {
+        box-shadow: 2px 4px 16px $color-primary;
+        transform: translateY(-1px);
+    }
+}
