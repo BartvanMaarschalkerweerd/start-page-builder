@@ -1,0 +1,56 @@
+@import 'config.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:not(.fa):not(.fas):not(.far):not(.fal) {
+	font-family: $defaultFont;	
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+    // @media only screen and (max-width: $bp-large) {
+    //     font-size: 50%;
+    // }
+}
+
+body {
+    background: $color-primary;
+    height: 100vh;
+}
+
+.btn {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: white;
+    color: $color-primary;
+    box-shadow: 0 3px 6px $color-primary;
+    font-weight: 700;
+    border-radius: 7px;
+    font-size: 2em;
+    margin: auto;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    padding: 1rem 0;
+    z-index: 1;
+    transition: all .3s;
+    margin: 4rem auto 2rem;
+    display: block;
+
+    &:hover {
+        box-shadow: 2px 4px 16px $color-primary;
+        transform: translateY(-1px);
+    }
+}
