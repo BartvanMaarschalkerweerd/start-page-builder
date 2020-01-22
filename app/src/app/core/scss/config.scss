@@ -1,9 +1,9 @@
 /*
 *   Colors
 */
-$color-primary: #4560e5;
-$color-primary-light: #6678d3;
-$color-primary-dark: #27357c;
+$color-primary:     #4560e5;
+$color-primary-light:   #6678d3;
+$color-primary-dark:    #27357c;
 
 $color-grey-light-1: #faf9f9;
 $color-grey-light-2: #f4f2f2;
@@ -17,16 +17,22 @@ $color-grey-dark-3: #999;
 /*
 *   Font
 */
-$font-default: "Quicksand",sans-serif;
-$font-default-color: $color-grey-light-1;
-$font-default-size: 16px;
-$font-default-size-large: 18px;
-$font-default-size-small: 12px;
+$font-default:              "Quicksand",sans-serif;
+$font-default-color:        $color-grey-light-1;
+$font-default-size:         16px;
+$font-default-size-large:   18px;
+$font-default-size-small:   12px;
 
 
 /*
 *   Button
 */
-$button-default-color: $color-grey-light-1;
-$button-default-border-color: $color-grey-light-1;
-$button-default-border-radius: 5px;
+$button-default-color:          $color-grey-light-1;
+$button-default-border-color:   $color-grey-light-1;
+$button-default-shadow:         $color-primary-dark;
+$button-default-border-radius:  5px;
+
+
+/*
+*   
+*/
