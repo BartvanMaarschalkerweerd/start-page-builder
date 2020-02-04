@@ -4,8 +4,6 @@ import { FooterModule } from 'src/app/core/components/footer/footer.module';
 import { HeaderModule } from 'src/app/core/components/header/header.module';
 import { StartComponent } from './start.component';
 
-
-
 @NgModule({
 	declarations: [
 		StartComponent
@@ -13,8 +11,7 @@ import { StartComponent } from './start.component';
 	imports: [
 		startRouting,
 		HeaderModule,
-		FooterModule,
-	],
-	providers: []
+		FooterModule
+	]
 })
 export class StartModule { }
