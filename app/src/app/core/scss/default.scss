@@ -1,4 +1,5 @@
 @import 'config.scss';
+@import 'helpers.scss';
 
 * {
     margin: 0;
@@ -6,7 +7,7 @@
 }
 
 *:not(.fa):not(.fas):not(.far):not(.fal) {
-	font-family: $defaultFont;	
+	font-family: $font-default;	
 }
 
 *,
@@ -19,14 +20,22 @@ html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
 
-    // @media only screen and (max-width: $bp-large) {
-    //     font-size: 50%;
-    // }
+    @media only screen and (max-width: 1200px) {
+        font-size: 50%;
+    }
 }
 
-body {
+.app-wrapper {
     background: $color-primary;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    * {
+        color: $font-default-color;
+    }
 }
 
 .btn {
@@ -41,7 +50,7 @@ body {
     font-size: 2em;
     margin: auto;
     width: 100%;
-    max-width: 300px;
+    max-width: 30rem;
     text-align: center;
     padding: 1rem 0;
     z-index: 1;

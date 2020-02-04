@@ -1,0 +1,18 @@
+@import '../../scss/default.scss';
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $color-grey-dark-1;
+    text-align: center;
+
+    .container {
+        padding: 0.5rem 0;
+
+        p {
+            font-size: 1.4rem;
+        }
+    }
+}
