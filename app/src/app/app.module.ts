@@ -9,6 +9,7 @@ import { EditModule } from './modules/edit/edit.module';
 import { PreviewModule } from './modules/preview/preview.module';
 import { HeaderModule } from './core/components/header/header.module';
 import { DownloadModule } from './modules/download/download.module';
+import { CommonModule } from '@angular/common';
 
 // Routers
 const appRoutes: Routes = [];
@@ -20,6 +21,7 @@ const appRoutes: Routes = [];
 	imports: [
 		// Core modules
 		BrowserModule,
+		CommonModule,
 		RouterModule.forRoot(appRoutes),
 		FooterModule,
 		HeaderModule,

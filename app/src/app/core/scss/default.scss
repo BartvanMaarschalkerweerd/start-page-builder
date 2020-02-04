@@ -1,5 +1,6 @@
 @import 'config.scss';
 @import 'helpers.scss';
+@import 'item.scss';
 
 * {
     margin: 0;
@@ -25,6 +26,12 @@ html {
     }
 }
 
+p {
+    font-size: $font-default-size;
+}
+* {
+    color: $font-default-color;
+}
 .app-wrapper {
     background: $color-primary;
     height: 100vh;
@@ -33,33 +40,59 @@ html {
     justify-content: center;
     flex-wrap: wrap;
 
-    * {
-        color: $font-default-color;
-    }
-}
+    .app-container {
+        max-width: 120rem;
 
-.btn {
-    -webkit-appearance: none;
-    appearance: none;
-    border: none;
-    background: white;
-    color: $color-primary;
-    box-shadow: 0 3px 6px $color-primary;
-    font-weight: 700;
-    border-radius: 7px;
-    font-size: 2em;
-    margin: auto;
-    width: 100%;
-    max-width: 30rem;
-    text-align: center;
-    padding: 1rem 0;
-    z-index: 1;
-    transition: all .3s;
-    margin: 4rem auto 2rem;
-    display: block;
-
-    &:hover {
-        box-shadow: 2px 4px 16px $color-primary;
-        transform: translateY(-1px);
+        .btn {
+            &,
+            &:link,
+            &:visited {
+                text-transform: uppercase;
+                text-decoration: none;
+                padding: 1.5rem 4rem;
+                display: inline-block;
+                border-radius: 10rem;
+                transition: all .2s;
+                position: relative;
+                font-size: $font-default-size;
+                background: $color-grey-light-1;
+                color: $color-primary;
+                font-weight: bold;
+        
+                //Change for the <button> element
+                border: 0;
+                cursor: pointer;
+            }
+            
+            &:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 1rem 2rem rgba($color-black,.2);
+        
+                &::after {
+                    transform: scaleX(1.4) scaleY(1.6);
+                    opacity: 0;
+                }
+            }
+            
+            &:active,
+            &:focus {
+                outline: none;
+                transform: translateY(-1px);
+                box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+            }
+            
+            &::after {
+                content: "";
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+                border-radius: 10rem;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: all .4s;
+            }
+        }
     }
 }

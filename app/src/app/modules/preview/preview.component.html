@@ -1,1 +1,12 @@
-<p>preview works!</p>
+<div class="item-wrapper">
+    <div class="item-row">
+        <div class="item" *ngFor="let item of items; let i = index">
+            <div class="item-icon-wrapper">
+                <i class="{{item.icon}}"></i>
+            </div>
+            <div class="item-text">
+                {{item.name}}
+            </div>
+        </div>
+    </div>
+</div>
