@@ -7,29 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PreviewComponent implements OnInit {
 
-	// public items = {
-	// 	1: {
-	// 		name: 'test1',
-	// 		icon: 'fas fa-thumbs-up',
-	// 		type: 'button',
-	// 		href: 'www.google.nl'
-	// 	},
-	// 	2: {
-	// 		name: 'test2',
-	// 		icon: 'fas fa-thumbs-up',
-	// 		type: 'category',
-	// 		href: '',
-
-	// 		1: {
-	// 			name: 'test2-sub',
-	// 			icon: 'fas fa-thumbs-down',
-	// 			type: 'button',
-	// 			href: ''
-	// 		}
-	// 	}
-			
-	// }
-
 	public items = [
 		{
 			name: 'test1-row-1',
